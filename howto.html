@@ -8,7 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
+    <link rel="stylesheet" href="hamburgers.css">
+   <style>
+        @media screen and (max-width: 768px){
+        .menu{
+            transform: scale(0);
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            -o-transform: scale(0);
+            transform-origin: top;
+            opacity: 0;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease; 
+        }
+        .menu.menu-active{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            opacity: 1;
+        }
+      }
+
       .bbh{
         font-family: 'BBH Sans Hegarty', sans-serif;
       }
@@ -22,6 +48,7 @@
         -webkit-text-fill-color: transparent !important;
         color: transparent !important;
         }
+        
     </style>
     <!--npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch-->
     </head>
@@ -37,55 +64,59 @@
     <!--Navbar-->
     <div class="bg-[url('img/mt.jpeg')] bg-cover inset-0 fixed bg-center w-full h-full"></div>
     <div class="relative z-10">
-      <header class="mx-auto px-10 py-4 flex justify-between items-center bg-[#001427]/40 backdrop-blur-2xl text-lg text-white overflow-hidden fixed top-0 left-0 right-0 w-[100%] z-10">
-        <nav
-      class="container mx-auto px-6 py-4 flex justify-between items-center ">
-      <a href="index.html" class=" text-2xl mont font-extrabold hover:text-[#F4D58D] text-gradient-css"
-      >EZEKIEL</a>
-      <ul class="hidden md:flex space-x-8 brand2 mont">
-        <li>
-          <a
-          href="index.html"
-            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
-            >Home</a>
+    <header class=" mx-auto px-10 py-4 flex flex-wrap justify-between items-center bg-[#001427]/40 backdrop-blur-2xl text-lg text-white  fixed top-0 left-0 right-0 w-full z-10">
+      <nav class="container items-center md:w-auto mx-auto px-6 py-4 flex justify-between md:max-w-6xl">
+      <a href="index.html" class="align-middle text-3xl mont font-extrabold bbh text-gradient-css"
+        >EZEKIEL</a>
+      <ul class=" items-center menu text-center absolute flex space-x-2 md:static mont top-31 z-10 left-0 
+      flex-col md:flex md:flex-row md:top-1 md:bg-transparent bg-[#001427]/45 px-2 pt-2 pb-3 space-y-1 sm:px-3 pl-1 md:w-auto w-full mr-auto">
+        <li class="py-4 w-full mx-5 text-center">
+          <a href="index.html"class=" pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white">Home</a>
         </li>
-        <li>
+        <li class="py-4 w-full mx-5 text-center">
           <a
             href="html-section.html"
-            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            class=" pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
             >HTML</a>
-          </li>
-          <li>
-            <a
-            href="css.html"
-          class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+        </li>
+        <li class="py-4 w-full mx-5 text-center">
+          <a
+          href="css.html"
+          class=" pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
           >CSS</a>
         </li>
-        <li>
+        <li class="py-4 w-full mx-5 text-center">
           <a
-          href="js.html"
-          class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            href="js.html"
+            class=" pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
             >Javascript</a>
         </li>
-        <li>
+        <li class="py-4 w-full mx-5 text-center">
           <a
             href="tailwind.html"
-            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            class=" pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
             >Tailwind</a>
         </li>
-        <li>
+        <li class="py-4 w-full mx-5 text-center">
           <a
             href="howto.html"
-            class="pb-1 border-b-3 font-semibold text-[#F4D58D] border-[#F4D58D] hover:border-white"
-            >How To</a>
+            class=" pb-1 border-b-3 font-semibold text-[#F4D58D] border-white hover:border-white"
+            >Website</a>
         </li>
-        <li>
+        <li class=" py-4 w-full mx-5 text-center">
           <a
             href="kesanPesan.html"
-            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
-            >Kesan & Pesan</a>
+            class=" pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            >Refleksi</a>
         </li>
       </ul>
+      <div class="md:hidden block">
+        <button class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner bg-[#F4D58D] before:bg-[#F4D58D] after:bg-[#F4D58D]"></span>
+        </span>
+        </button>
+      </div>
     </nav>
     </header>
     <!--Navbar-->
@@ -126,7 +157,7 @@
       </div>
     </section>
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
 
