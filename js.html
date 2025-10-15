@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript — Pengenalan & Cara Menggunakan</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      .bbh{
+        font-family: 'BBH Sans Hegarty', sans-serif;
+      }
+      .mont{
+        font-family: 'Montserrat', sans-serif;
+      }
+      .text-gradient-css{
+        background: linear-gradient(to bottom, #F4D58D, #b69e68);
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+        }
+    </style>
+    <!--npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch-->
+    </head>
+    <!-- --ghost-white: #e8e9f3ff;
+    --silver: #cececeff;
+    --french-gray: #a6a6a8ff;
+    --raisin-black: #272635ff;
+    --non-photo-blue: #b1e5f2ff 
+    kuning #F4D58D 
+    biru gelap #001427
+    ijo #376871-->
+    <body>
+    <!--Navbar-->
+    <div class="bg-[url('img/mt.jpeg')] bg-cover inset-0 fixed bg-center w-full h-full"></div>
+    <div class="relative z-10">
+      <header class="mx-auto px-10 py-4 flex justify-between items-center bg-[#001427]/40 backdrop-blur-2xl text-lg text-white overflow-hidden fixed top-0 left-0 right-0 w-[100%] z-10">
+        <nav
+      class="container mx-auto px-6 py-4 flex justify-between items-center ">
+      <a href="index.html" class=" text-xl mont font-extrabold hover:text-[#F4D58D] text-gradient-css"
+      >EZEKIEL</a>
+      <ul class="hidden md:flex space-x-8 brand2 mont">
+        <li>
+          <a
+          href="index.html"
+            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            >Home</a>
+        </li>
+        <li>
+          <a
+            href="html-section.html"
+            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            >HTML</a>
+          </li>
+          <li>
+            <a
+            href="css.html"
+          class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+          >CSS</a>
+        </li>
+        <li>
+          <a
+          href="js.html"
+          class="pb-1 border-b-3 font-semibold text-[#F4D58D] border-[#F4D58D] hover:border-white"
+            >Javascript</a>
+        </li>
+        <li>
+          <a
+            href="tailwind.html"
+            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            >Tailwind</a>
+        </li>
+        <li>
+          <a
+            href="howto.html"
+            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            >How To</a>
+        </li>
+        <li>
+          <a
+            href="kesanPesan.html"
+            class="pb-1 border-b-3 font-semibold text-white border-transparent hover:border-white"
+            >Kesan & Pesan</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <!--Navbar-->
+    <section class="flex justify-center flex-col">
+    <div class="mt-35 container flex flex-wrap-reverse justify-center items-center text-center space-x-0 px-4 py-10 mx-auto">
+      <div class=" text-center items-center flex flex-col justify-center max-w-4xl container">
+          <h1 class="bbh text-6xl text-[#F4D58D]">JavaScript</h1>
+          <h2 class="text-white mont text-lg mt-[10px] flex-wrap font-semibold">Bahasa pemrograman yang digunakan untuk membuat website menjadi interaktif.</h2>
+          <h2 class="text-white mont text-lg mt-[10px] font-semibold">Misalnya:</h2>
+          <h2 class="text-white mont text-lg">- Menampilkan popup</h2>
+          <h2 class="text-white mont text-lg">- Validasi form</h2>
+          <h2 class="text-white mont text-lg">- Animasi</h2>
+        </div>
+      <img src="img/JavaScript-logo.png" alt="css" class="h-60 mb-5">
+        </div>  
+      <div class="mx-auto justify-center flex flex-col mt-[10px] border-2 p-5 border-solid border-white rounded-2xl container bg-white/1 backdrop-blur-2xl">
+            <h1 class="text-left bbh text-3xl text-[#F4D58D]">Penggunaan JavaScript</h1>
+            <div class="flex space-x-10 mt-[20px] border-b-2 border-solid border-white pb-10">
+                <div class="flex flex-col mt-2 border-r-2 border-solid border-white pr-10">
+                    <h1 class="mont text-lg text-white">JavaScript melalui tag script di HTML</h1>
+                    <img src="img/code8.png" alt="code1" class="w-xl  mt-[20px] rounded-2xl border-solid border-1 border-white hover:border-[#F4D58D] hover:shadow-lg hover:shadow-[#483f29]">
+                </div>
+                <div class="flex flex-col mt-2">
+                    <h1 class="mont text-lg text-white">Contoh Interaksi JavaScript</h1>
+                    <img src="img/code11.png" alt="code1" class="w-xl mt-[20px] rounded-2xl border-solid border-1 border-white hover:border-[#F4D58D] hover:shadow-lg hover:shadow-[#483f29]">
+                </div>
+            </div>
+            <div class="flex flex-col mt-5 ">
+                <h1 class="mont text-lg text-white">JavaScript dalam File terpisah</h1>
+                <div class="flex space-x-20 flex-wrap items-center">
+                    <img src="img/code9.png" alt="code1" class="w-lg mt-[20px] rounded-2xl border-solid border-1 border-white hover:border-[#F4D58D] hover:shadow-lg hover:shadow-[#483f29]">
+                    <img src="img/code10.png" alt="code1" class="w-lg mt-[20px] rounded-2xl border-solid border-1 border-white hover:border-[#F4D58D] hover:shadow-lg hover:shadow-[#483f29]">
+                </div>
+             </div>
+ 
+          </div>
+        
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
+
+
+
